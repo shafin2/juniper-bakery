@@ -1,6 +1,6 @@
 'use strict';
 
-const VERSION = 'v2';
+const VERSION = 'v3';
 
 const fs = require('fs');
 const path = require('path');
