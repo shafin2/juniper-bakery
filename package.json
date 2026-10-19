@@ -1,0 +1,18 @@
+{
+  "name": "juniper-bakery",
+  "version": "1.0.0",
+  "description": "Juniper — a neighbourhood bakery & coffee house. A small Express + Postgres demo app.",
+  "main": "server.js",
+  "private": true,
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.21.2",
+    "pg": "^8.13.1"
+  }
+}

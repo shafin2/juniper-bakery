@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Juniper — Bakery & Coffee</title>
+  <meta name="description" content="Juniper is a neighbourhood bakery and coffee house on Linden Row, Brooklyn. Naturally leavened bread, laminated pastry and good coffee. Order ahead online.">
+  <meta name="theme-color" content="#1F3A2D">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%231F3A2D'/%3E%3Cpath d='M16 50C24 38 34 26 48 14' stroke='%23F4ECDF' stroke-width='3.5' fill='none' stroke-linecap='round'/%3E%3Ccircle cx='27' cy='42' r='7.5' fill='%23C2643A'/%3E%3Ccircle cx='38' cy='34' r='6' fill='%23EED9A8'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="/" aria-label="Juniper — home">
+        <svg class="mark" viewBox="0 0 40 40" aria-hidden="true">
+          <path d="M7 35C14 26 22 16 33 5" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+          <path d="M14 27l-6-2M18 22l-6-4M22 17l-5-5M26 12l-3-5M15 26l4 5M19 21l6 3M23 16l7 1M27 11l6-1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+          <circle cx="13" cy="33" r="3.4" fill="#C2643A"/><circle cx="20" cy="30" r="2.8" fill="#4E5D86"/>
+        </svg>
+        <span>Juniper</span>
+      </a>
+      <nav aria-label="Primary">
+        <ul class="nav">
+          <li class="nav-hide"><a href="#menu">Menu</a></li>
+          <li class="nav-hide"><a href="#visit">Visit</a></li>
+          <li><a class="btn btn-small" href="#order">Order ahead</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">
+            <span>Bakery &amp; coffee · Est. 2014</span>
+            <span class="version" id="version-badge" hidden title="App version, from /api/info"></span>
+          </p>
+          <h1 id="hero-title">Bread worth <em>waking&nbsp;up</em> for.</h1>
+          <p class="lede">A small neighbourhood bakery on Linden Row. We mill some of our own flour, give every loaf three days to ferment, and pull the first batch out of the oven at 6:40 — before the street is awake.</p>
+          <div class="hero-actions">
+            <a class="btn" href="#order">Order ahead</a>
+            <a class="link-arrow" href="#menu">See today’s menu <span aria-hidden="true">→</span></a>
+          </div>
+        </div>
+
+        <div class="hero-art" aria-hidden="true">
+          <div class="arch">
+            <svg viewBox="0 0 400 440" preserveAspectRatio="xMidYMax meet">
+              <circle cx="200" cy="190" r="128" fill="#EED9A8" opacity=".10"/>
+              <circle cx="200" cy="190" r="88" fill="#EED9A8" opacity=".08"/>
+              <g stroke="#EED9A8" stroke-width="2.4" fill="none" stroke-linecap="round" opacity=".75">
+                <path d="M74 360C80 290 92 220 118 150"/>
+                <path d="M330 362C326 300 316 250 296 196"/>
+              </g>
+              <g fill="#EED9A8" opacity=".75">
+                <ellipse cx="114" cy="160" rx="5" ry="10" transform="rotate(18 114 160)"/>
+                <ellipse cx="104" cy="178" rx="5" ry="10" transform="rotate(-24 104 178)"/>
+                <ellipse cx="120" cy="186" rx="5" ry="10" transform="rotate(36 120 186)"/>
+                <ellipse cx="98" cy="200" rx="5" ry="10" transform="rotate(-26 98 200)"/>
+                <ellipse cx="114" cy="210" rx="5" ry="10" transform="rotate(34 114 210)"/>
+                <ellipse cx="94" cy="224" rx="5" ry="10" transform="rotate(-28 94 224)"/>
+                <ellipse cx="300" cy="206" rx="4.5" ry="9" transform="rotate(-20 300 206)"/>
+                <ellipse cx="310" cy="222" rx="4.5" ry="9" transform="rotate(26 310 222)"/>
+                <ellipse cx="296" cy="232" rx="4.5" ry="9" transform="rotate(-30 296 232)"/>
+                <ellipse cx="314" cy="246" rx="4.5" ry="9" transform="rotate(30 314 246)"/>
+              </g>
+              <ellipse cx="200" cy="392" rx="176" ry="26" fill="#6E4A31"/>
+              <ellipse cx="200" cy="384" rx="176" ry="24" fill="#8F6342"/>
+              <g transform="translate(34 150) scale(2.05)">{{HERO_SOURDOUGH}}</g>
+              <g transform="translate(206 282) scale(1.05)">{{HERO_CROISSANT}}</g>
+            </svg>
+          </div>
+          <svg class="stamp" viewBox="0 0 140 140">
+            <defs><path id="stamp-circle" d="M70 70m-50 0a50 50 0 1 1 100 0a50 50 0 1 1-100 0"/></defs>
+            <circle cx="70" cy="70" r="68" fill="#F4ECDF"/>
+            <circle cx="70" cy="70" r="62" fill="none" stroke="#1F3A2D" stroke-width="1" opacity=".35"/>
+            <text font-family="Inter, sans-serif" font-size="10.5" font-weight="600" fill="#1F3A2D"><textPath href="#stamp-circle" textLength="312" lengthAdjust="spacing">FRESH EVERY MORNING · LINDEN ROW · </textPath></text>
+            <path d="M70 52v36M52 70h36M57 57l26 26M83 57L57 83" stroke="#C2643A" stroke-width="2.4" stroke-linecap="round"/>
+          </svg>
+        </div>
+      </div>
+
+      <div class="wrap facts" id="visit">
+        <div class="fact">
+          <h2>Hours</h2>
+          <dl class="hours">
+            <div><dt>Tue – Fri</dt><dd>7:00 – 18:00</dd></div>
+            <div><dt>Sat – Sun</dt><dd>8:00 – 16:00</dd></div>
+            <div><dt>Monday</dt><dd>We rest</dd></div>
+          </dl>
+        </div>
+        <div class="fact">
+          <h2>Find us</h2>
+          <address>14 Linden Row, Brooklyn<br>New York 11216</address>
+          <p class="muted">Green door, two steps down. Bikes welcome out front.</p>
+        </div>
+        <div class="fact">
+          <h2>The daily bake</h2>
+          <p>Loaves come out at 6:40, pastry at 7:30. When it’s gone, it’s gone — so order ahead and we’ll set yours aside.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="menu" id="menu" aria-labelledby="menu-title">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="kicker">The menu</p>
+          <h2 id="menu-title">From the oven, <em>this morning</em></h2>
+          <p class="section-intro">A short list, done carefully. Everything is baked in the room behind the counter, from flour, water, salt and a lot of patience.</p>
+        </div>
+        <ul class="cards">{{MENU_CARDS}}
+        </ul>
+      </div>
+    </section>
+
+    <section class="order" id="order" aria-labelledby="order-title">
+      <div class="wrap order-grid">
+        <div class="order-intro">
+          <p class="kicker kicker-light">Order ahead</p>
+          <h2 id="order-title">Skip the queue. <em>We’ll wrap it.</em></h2>
+          <p>Tell us what you’d like and when you’re coming. It’ll be on the shelf by the door with your name on it.</p>
+
+          <form class="order-form" id="order-form" novalidate>
+            <div class="field">
+              <label for="f-name">Your name</label>
+              <input id="f-name" name="name" type="text" maxlength="40" autocomplete="given-name" placeholder="e.g. Maya" required aria-describedby="err-name">
+              <p class="field-error" id="err-name" aria-live="polite"></p>
+            </div>
+            <div class="field-row">
+              <div class="field">
+                <label for="f-item">What you’d like</label>
+                <select id="f-item" name="item" required aria-describedby="err-item">{{ITEM_OPTIONS}}</select>
+                <p class="field-error" id="err-item" aria-live="polite"></p>
+              </div>
+              <div class="field field-time">
+                <label for="f-time">Pickup</label>
+                <select id="f-time" name="pickupTime" required aria-describedby="err-pickupTime">{{PICKUP_OPTIONS}}</select>
+                <p class="field-error" id="err-pickupTime" aria-live="polite"></p>
+              </div>
+            </div>
+            <button class="btn btn-cream" type="submit" id="submit-btn">Place order</button>
+            <div class="confirm" id="confirm" role="status" aria-live="polite" hidden>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="11" fill="#EED9A8"/><path d="M7 12.5l3.2 3.2L17 9" stroke="#1F3A2D" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <p id="confirm-text"></p>
+            </div>
+            <p class="form-error" id="form-error" role="alert" hidden></p>
+          </form>
+        </div>
+
+        <aside class="ledger" aria-labelledby="ledger-title">
+          <div class="ledger-head">
+            <div>
+              <h3 id="ledger-title">Today at the counter</h3>
+              <p class="ledger-count"><span id="today-count">0</span> <span id="today-label">orders today</span></p>
+            </div>
+            <span class="pill" id="storage-pill" data-storage="loading"><span class="dot" aria-hidden="true"></span><span class="pill-text">Checking storage…</span></span>
+          </div>
+          <ol class="orders" id="orders" aria-live="polite"></ol>
+          <p class="orders-empty" id="orders-empty" hidden>No orders yet today. Be the first — the croissants are still warm.</p>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-grid">
+      <p class="footer-mark">Juniper</p>
+      <div>
+        <p>14 Linden Row, Brooklyn, NY 11216</p>
+        <p class="muted">Tue–Fri 7–18 · Sat–Sun 8–16 · Closed Mondays</p>
+      </div>
+      <div class="footer-meta">
+        <span class="pill pill-small" id="footer-pill" data-storage="loading"><span class="dot" aria-hidden="true"></span><span class="pill-text">…</span></span>
+        <span class="muted" id="footer-version"></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/app.js" defer></script>
+</body>
+</html>
